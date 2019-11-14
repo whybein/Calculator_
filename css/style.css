@@ -1,0 +1,66 @@
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px 20px;
+  table-layout: fixed;
+  border: 1px solid black;
+}
+
+td {
+  border: 1px solid black;
+}
+
+#pad {
+  padding: 10px 15px;
+  text-align: center;
+  width: 20%;
+  font-size: 16px;
+  font: bold;
+}
+
+#pad:hover {
+  background-color: beige;
+}
+
+#backspace {
+  text-align: center;
+  vertical-align: middle;
+  width: 20%;
+  font-size: 16px;
+  font: bold;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  width: 100%;
+  height: 100%;
+  height: 70px;
+  text-align: right;
+  margin-top: 1.5px;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+input {
+  text-align: right;
+  border: none;
+}
+
+input:focus,
+#dispaly:focus {
+  outline: none;
+}
+
+#result {
+  text-align: right;
+  width: 95%;
+  padding: 10px 4px;
+}

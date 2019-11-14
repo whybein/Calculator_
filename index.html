@@ -1,56 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>계산기</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <table id="table" border="1">
-            <tr height="70">
-                <td colspan="4" id="insert" cellspacing="0">
-                    <div id="contentEditableDiv">
-                        <p id="insert" contentEditable="true"></p>
-                    </div>
-                </td>
+  <head>
+    <title>계산기</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <table id="table" border="1">
+      <tr>
+        <td colspan="4" id="display">
+          <textarea id="display"></textarea>
+        </td>
 
-                <td id="pad" onclick="back()">←</td>
-            </tr>
-            <tr>
-                <td colspan="5">
-                    <input type="text" id="result" readonly />
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" id="pad" onclick="reset()">AC</td>
-                <td id="pad">( )</td>
-                <td id="pad" onclick="add('/')">/</td>
-                <td rowspan="5" onclick="calculate()" id="pad">=</td>
-            </tr>
-            <tr>
-                <td id="pad" onclick="add(7)">7</td>
-                <td id="pad" onclick="add(8)">8</td>
-                <td id="pad" onclick="add(9)">9</td>
-                <td id="pad" onclick="add('*')">*</td>
-            </tr>
-            <tr>
-                <td id="pad" onclick="add(4)">4</td>
-                <td id="pad" onclick="add(5)">5</td>
-                <td id="pad" onclick="add(6)">6</td>
-                <td id="pad" onclick="add('-')">-</td>
-            </tr>
-            <tr>
-                <td id="pad" onclick="add(1)">1</td>
-                <td id="pad" onclick="add(2)">2</td>
-                <td id="pad" onclick="add(3)">3</td>
-                <td id="pad" onclick="add('+')" rowspan="2">+</td>
-            </tr>
-            <tr>
-                <td id="pad" onclick="add(00)">00</td>
-                <td id="pad" onclick="add(0)">0</td>
-                <td id="pad" onclick="add('.')">.</td>
-            </tr>
-        </table>
+        <td id="backspace" onclick="back()">←</td>
+      </tr>
+      <tr>
+        <td colspan="5">
+          <input type="text" id="result" readonly />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" id="pad" onclick="reset()">AC</td>
+        <td id="pad">( )</td>
+        <td id="pad" onclick="add('/')">/</td>
+        <td rowspan="5" onclick="calculate()" id="pad">=</td>
+      </tr>
+      <tr>
+        <td id="pad" onclick="add(7)">7</td>
+        <td id="pad" onclick="add(8)">8</td>
+        <td id="pad" onclick="add(9)">9</td>
+        <td id="pad" onclick="add('*')">*</td>
+      </tr>
+      <tr>
+        <td id="pad" onclick="add(4)">4</td>
+        <td id="pad" onclick="add(5)">5</td>
+        <td id="pad" onclick="add(6)">6</td>
+        <td id="pad" onclick="add('-')">-</td>
+      </tr>
+      <tr>
+        <td id="pad" onclick="add(1)">1</td>
+        <td id="pad" onclick="add(2)">2</td>
+        <td id="pad" onclick="add(3)">3</td>
+        <td id="pad" onclick="add('+')" rowspan="2">+</td>
+      </tr>
+      <tr>
+        <td id="pad" onclick="add(00)">00</td>
+        <td id="pad" onclick="add(0)">0</td>
+        <td id="pad" onclick="add('.')">.</td>
+      </tr>
+    </table>
 
-        <script src="./calc.js"></script>
-    </body>
+    <script src="./calc.js"></script>
+  </body>
 </html>
